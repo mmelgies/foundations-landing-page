@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+
+.headmain {
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.text {
+    border: solid 1px black;
+    flex:1;
+}
+
+.button {
+    border: solid 1px black;
+}
+
+.image {
+    border: solid 1px black;
+    flex: 1;
+}
