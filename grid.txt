@@ -1,0 +1,44 @@
+.grid-item {
+    border: solid 1px black;
+}
+
+.grid-container {
+    display: grid;
+    /*grid-template-columns: 2fr 1fr;*/
+   /* grid-template-columns: repeat(2, 100px); /*how many columns*/
+   /* grid-template-rows: 200px; /*150px;*/
+    /*grid-auto-rows: 50px;*/
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px,auto);
+    /*grid-row-gap: 20px;
+    grid-column-gap: 10px; IF i want the same gap for column and rows i can use bottom:*/
+    grid-gap: 20px;
+    /*grid-template-areas: "header header"
+    "sidebar content"*/
+}
+
+.grid-item-1 {
+    /*grid-area: header;*/
+    /*grid-column-start: 1;
+    grid-column-end: 3; /*or -1 to take each of them under the header*/
+    /*grid-column: 1 / -1; /* the same as column start and column end but in one line*/
+    grid-column: span 2;
+}
+
+.grid-item-2 {
+    /*grid-area: sidebar;*/
+   /* grid-row-start: 2;
+    grid-row-end: 4;*/
+    grid-row: span 2;
+}
+
+.grid-item-3 {
+    /*grid-area: content;*/
+    /*grid-row-start: 2;
+    grid-row-end: 4;*/
+    grid-row: span 3; /*span1 is the default*/
+}
+
+
+
+ justify-content: center; /* or it can be start/end not flex-start flex-end as in flexbox*/

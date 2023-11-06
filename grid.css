@@ -1,0 +1,23 @@
+.grid-item {
+    border: solid 1px black;
+}
+
+.grid-container {
+    display: grid;
+    
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px,auto);
+    border: solid 1px red;
+    grid-gap: 20px;
+   justify-content: center; /* or it can be start/end not flex-start flex-end as in flexbox*/
+   /*justify-items: center;
+   align-items: center;*/
+}
+ /*  justify-items: stretch;
+   align-items: stretch;
+}
+
+.grid-item-1 {
+    align-self: start;
+    justify-self: center;
+}*/
