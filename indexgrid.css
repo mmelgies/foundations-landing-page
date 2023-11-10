@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content"
+}
+
+.grid-item-1 {
+    grid-area: header;
+
+}
+
+.grid-item-2 {
+    grid-area: sidebar;
+}
