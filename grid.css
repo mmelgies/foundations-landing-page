@@ -10,6 +10,11 @@
     border: solid 1px red;
     grid-gap: 20px;
    justify-content: center; /* or it can be start/end not flex-start flex-end as in flexbox*/
+   grid-template-areas: "header header"
+   "sidebar sidebar"
+   "sidebar sidebar"
+   "sidebar sidebar"
+   "footer footer"
    /*justify-items: center;
    align-items: center;*/
 }
@@ -20,4 +25,16 @@
 .grid-item-1 {
     align-self: start;
     justify-self: center;
+}*/
+
+.grid-item-1 {
+    grid-area: header;
+}
+
+.grid-item-7 {
+    grid-area: footer;
+}
+
+/*.grid-item-2 {
+    grid-area: sidebar;
 }*/
