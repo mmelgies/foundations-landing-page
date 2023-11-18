@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+   ::before,
+   ::after {
+    box-sizing: inherit;
+  }
+  
+  .grid {
+    display: grid;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "nav nav nav nav nav nav" "logo logo logo logo logo logo" "main main main main main side" "footer footer footer footer footer footer";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px 50px 1fr auto;
+  }
+  
+  .nav {
+    grid-area: nav;
+    background-color: green;
+  }
+  
+  .logo {
+    grid-area: logo;
+    background-color: salmon;
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: cadetblue;
+    min-height: 800px;
+    height: auto;
+  }
+  
+  .side {
+    grid-area: side;
+    background-color: lightpink;
+    min-height: 800px;
+    height: auto;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: sandybrown;
+    height: 50px;
+  }
+  
+  .overlap {
+    background-color: hotpink;
+    grid-area: 3/ 3/ 3/ 4;
+    z-index: 5;
+  }
