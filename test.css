@@ -1,55 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px black;
   
-   ::before,
-   ::after {
-    box-sizing: inherit;
-  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 185px;
+  margin-right: 185px;
+  border: solid 1px black;
+}
+
+
+.headmain {
+  display: flex;
+  padding-left: 185px;
+  padding-right: 185px;
+  border: solid 1px black;
+  padding-top: 100px;
+}
+
+.logo {
+  display: flex;
+  border: solid 1px black;
+}
+
+.text {
+  flex: 1;
+  border: solid 1px black;
   
-  .grid {
-    display: grid;
-    position: relative;
-    margin: auto;
-    grid-template-areas: "nav nav nav nav nav nav" "logo logo logo logo logo logo" "main main main main main side" "footer footer footer footer footer footer";
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px 50px 1fr auto;
-  }
+}
+
+.image {
+  flex:1;
+  border: solid 1px black;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ background-color: #1F2937;
+}
+
+.three {
+  background-color: green;
   
-  .nav {
-    grid-area: nav;
-    background-color: green;
-  }
+}
+
+.down {
+  display: block;
+ background-color: aqua;
+ 
+ width: 100%;
+}
+
+.container {
+  display: block;
+  min-height: 100vh;
+  align-items: flex-start;
   
-  .logo {
-    grid-area: logo;
-    background-color: salmon;
-  }
-  
-  .main {
-    grid-area: main;
-    background-color: cadetblue;
-    min-height: 800px;
-    height: auto;
-  }
-  
-  .side {
-    grid-area: side;
-    background-color: lightpink;
-    min-height: 800px;
-    height: auto;
-  }
-  
-  .footer {
-    grid-area: footer;
-    background-color: sandybrown;
-    height: 50px;
-  }
-  
-  .overlap {
-    background-color: hotpink;
-    grid-area: 3/ 3/ 3/ 4;
-    z-index: 5;
-  }
+  background-color: lightpink;
+}
+
