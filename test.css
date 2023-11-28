@@ -1,6 +1,6 @@
 
 
-body {
+/*body {
   margin: 0;
   padding: 0;
 }
@@ -74,7 +74,16 @@ ul {
   display: block;
   min-height: 100vh;
   align-items: flex-start;
-  
+  height: 100%;
   background-color: lightpink;
 }
+*/
 
+.container {
+background-color: blue;
+padding-left: 100px;
+}
+
+.header {
+  border: solid 1px black;
+}
